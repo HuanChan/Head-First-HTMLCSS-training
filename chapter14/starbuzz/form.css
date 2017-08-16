@@ -1,0 +1,34 @@
+﻿body{
+	background:		#efe5d0 url(images/background.gif) top left;
+	margin:			20px;
+}
+
+form{
+	display:		table;
+	padding:		10px;
+	border:			thin dotted #7e7e7e;
+	background-color:#e1ceb8;
+}
+
+form textarea{
+	width:			500px;
+	height:			200px;
+}
+
+div.tableRow{
+	display:		table-row;
+}
+
+div.tableRow p{
+	display:		table-cell;
+	vertical-align:	top;	/**垂直顶部对齐*/
+	padding:		3px;
+}
+
+div.tableRow p:first-child{
+	text-align:		right;/**各行第一个P元素右对齐*/
+}
+
+p.heading{
+	font-weight:	bold;/**对于类为“heading”的<p>元素，将文本设置为粗体，“送货到”单元格中中会使用这个样式**/
+}

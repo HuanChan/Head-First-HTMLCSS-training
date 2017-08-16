@@ -1,0 +1,29 @@
+﻿
+	body{
+		font-family:sans-serif;
+	}
+	
+	em{
+		font-family:serif;
+	}
+		
+	p.greentea{
+		color:green;
+	}
+	
+	p.respberry{
+		color:blue;
+	}
+	
+	p.blueberry{
+		color:purple;
+	}
+
+	h1,h2{
+	<--设置相同样式的两个元素，使用逗号隔开-->
+		color:gray;
+	}
+
+	h1{
+		border-bottom:1px solid black;
+	}

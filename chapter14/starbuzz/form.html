@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Starbuzz Bean Machine</title>
+	<link type="text/css" rel="stylesheet" href="starbuzz.css">
+	<link type="text/css" rel="stylesheet" href="form.css">
+  </head>
+
+  <body>
+
+    <h1>The Starbuzz Bean Machine</h1>
+    <h2>Fill out the form below and click submit to order</h2>
+
+	<form action="http://starbuzzcoffe.com/processorder.php" method="post">
+		
+		<div class="tableRow">
+			<p>选择你的咖啡beans</p>
+			<p>
+			<select name="beans">
+				<option value="House Blend">House Blend</option>
+				<option value="Bolicia">Bolicia</option>
+				<option value="Guatemala">Guatemala</option>
+				<option value="Kenya">Kenya</option>
+			</select>
+			</p>
+		</div><!--第1行--->
+		
+		<div class="tableRow">
+			<p>选择全豆咖啡还是研磨咖啡</p>
+			<p>
+			<input type="radio" name="beantype" value="whole">全豆咖啡<br>
+			<input type="radio" name="beantype" value="ground" checked>研磨咖啡
+			</p>
+		</div><!--第2行--->
+		
+		<div class="tableRow">
+			<p>选择咖啡的数量</p>
+			<p>
+				<input type="number" name="bags" min="1" max="10">包
+			</p>
+		</div><!--第3行-->
+		
+		<div class="tableRow">
+			<p>送货日期</p>
+			<p>
+				<input type="date" name="date">
+			</p>
+		</div><!--第4行-->
+		
+		<div class="tableRow">
+			<p>更多的服务</p>
+			<p>
+				<input type="checkbox" name="extras[]" value="giftwrap">礼品包装<br>
+				<input type="checkbox" name="extras[]" value="catalog" checked>商品目录
+			</p>
+		</div><!--第5行-->
+		
+		<div class="tableRow">
+			<p>送货到</p>
+			<p></p><!---右列中还有一个空的单元格，所以要增加一个段落-->
+		</div><!---第6行-->
+		
+		<div class="tableRow">
+			<p>名字：</p>
+			<p><input type="text" name="name"></p>
+		</div><!--7-->
+		
+		<div class="tableRow">
+			<p>地址：</p>
+			<p><input type="text" name="address"></p>
+		</div><!---8--->
+		<div class="tableRow">
+			<p>城市：</p>
+			<p><input type="text" name="city"></p>
+		</div><!---9-->
+		<div class="tableRow">
+			<p>国家：</p>
+			<p><input type="text" name="state"></p>
+		</div><!--10--->
+		<div class="tableRow">
+			<p>邮编：</p>
+			<p><input type="text" name="zip"></p>
+		</div><!---11-->
+		<div class="tableRow">
+			<p>电话：</p>
+			<p><input type="text" name="phone"></p>
+		</div><!--12--->
+		<!---送货地址--->
+		
+		<div class="tableRow">
+			<p>客户意见</p>
+			<p>
+				<textarea name="comments"></textarea>
+			</p>
+		</div><!---13-->
+		
+		<div class="tableRow">
+			<p></p><!--左列有一个空白单元格-->
+			<p>
+				<input type="submit" value="现在提交">
+			</p>
+		</div><!---14-->
+		
+		<input type="passwords" name="secret"><br>
+		<input type="file" name="doc"><br>
+			<select name="beans" multiple>
+				<option value="House Blend">House Blend</option>
+				<option value="Bolicia">Bolicia</option>
+				<option value="Guatemala">Guatemala</option>
+				<option value="Kenya">Kenya</option>
+			</select>
+			<br>
+		<input type="text" name="abc" placeholder="提示" required><br>
+	</form>
+	
+  </body>
+</html>
+

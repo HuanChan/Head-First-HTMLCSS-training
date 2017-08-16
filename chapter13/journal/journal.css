@@ -1,0 +1,71 @@
+﻿@font-face {
+	font-family: "Emblema One";
+	src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"), 
+	     url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf"); 
+}
+body {
+  font-family:     Verdana, Geneva, Arial, sans-serif;
+  font-size:       small;
+}
+h1, h2 {
+  color:           #cc6600;
+  border-bottom:   thin dotted #888888;
+}
+h1 {
+  font-family:     "Emblema One", sans-serif;
+  font-size:       220%;
+}
+h2 {
+  font-size:       130%;
+  font-weight:     normal;
+}
+blockquote {
+  font-style:      italic;
+}
+
+table{
+	margin:			0px 20px 0px 20px;
+	border:			thin solid black;
+	caption-side:   bottom;
+	/***将表格的标题移动到表格下方**/
+	border-spacing:	0px;
+	/**边框间距：定义单元格之间的距离，大约相当于单元格的外边距。
+	没有的话单元格之间有两条虚线
+	表格单元格没有外边距**/
+	/**border-collape:collape;折叠边框，并把紧挨的两个边框合并成一个边框，一样的效果*/
+}
+th,td{
+	border:			thin dotted gray;
+	/**单元格边框为灰色虚线细边框*/
+	padding:		5px;
+}
+caption{
+	font-style:     italic;
+	padding-top:	8px;
+}
+
+tr:nth-child(2n+1){
+	background-color:#fcba7a;
+}
+/**奇数行加上颜色，隔行加色**/
+
+/**
+tr.cellcolor{
+	background-color:#fcba7a;
+}
+/**各行加上类cellcolor*/
+
+th{
+	background-color:#cc6600;
+}
+/**表头加上底色*/
+
+table table th,table table td{
+	background-color:white;
+}
+
+li{
+	list-style-image:url(images/backpack.gif);
+	padding-top:	5px;
+	margin-left:	20px;
+}

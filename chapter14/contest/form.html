@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Enter the Contest</title>
+  </head>
+  <body>
+    <form action="http://wickedlysmart.com/hfhtmlcss/contest.php" method="POST">
+      <p>Just type in your name (and click Submit) to enter the contest:<br>
+
+        First name: <input type="text" name="firstname" value=""><br>
+        Last name:  <input type="text" name="lastname" value=""><br>
+        <input type="submit"><br>
+		<!--文本输入和提交--->
+		
+		<input type="radio" name="hotornot" value="hot"><br>
+		<input type="radio" name="hotornot" value="not"><br>
+		<!---单选钮输入-->
+		
+		<input type="checkbox" name="spice" value="Salt"><br>
+		<input type="checkbox" name="spice" value="Pepper"><br>
+		<input type="checkbox" name="spice" value="Garlic"><br>
+		<!---复选框输入-->
+		
+		<textarea name="comments" rows="10" cols="48">文本区控件的初始文本</textarea><br>
+		<!--多行文本区-->
+		
+		<select name="characters">
+			<option value="Buckaroo">Buckaroo Banzai</option>
+			<option value="Tommy">测试中文</option>
+			<option value="Penny">Penny Priddy</option>
+			<option value="Jersey">New Jersey</option>
+			<option value="John">John Parker</option>
+		</select><br>
+		<!--选择输入：<select>和<option> 选择菜单控件-->
+		
+		<input type="number" min="0" max="20"><br>
+		<!--数值输入：只能输入最小0最大20的数字-->
+		
+		<input type="range" min="0" max="20" step="5"><br>
+		<!---数值范围输入：只能输入最小0最大20的数字，且其值间隔5--->
+		
+		<input type="color"><br>
+		<!--颜色输入-->
+		
+		<input type="date"><br>
+		<!------日期输入---->
+		
+		<input type="email"><br>
+		<!---mail输入-->
+		
+      </p>
+    </form>
+  </body>
+</html>
+
